@@ -1,0 +1,68 @@
+.Modal {
+  position: fixed;
+  top: 77px;
+  left: 316px;
+  width: 750px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 28px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.Modal.show {
+  display:block;
+}
+
+.Modal.hide {
+  display: none;
+}
+
+.Modal .content {
+  position: relative;
+}
+
+.Modal .content h2 {
+  margin: 0px;
+  text-align: left;
+}
+
+.Modal .content p {
+  text-align: justify;
+}
+
+.Modal .content .btn-area {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Modal .content .btn-area .btn {
+  padding: 8px 20px 8px 20px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.Modal .content .btn-area .btn.green-btn {
+  background-color: #28A745;
+}
+
+.Modal .content .btn-area .btn.red-btn {
+  background-color: #D63447;
+}
+
+.Modal .content .close-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.Modal .content .close-btn img {
+  filter: invert(0%) sepia(6%) saturate(7458%) hue-rotate(241deg)
+    brightness(114%) contrast(101%);
+  width: 20px;
+}
